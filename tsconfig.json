@@ -15,9 +15,14 @@
     "skipLibCheck": true,                           /* Skip type checking of declaration files. */
     "forceConsistentCasingInFileNames": true,       /* Disallow inconsistently-cased references to the same file. */
     "paths": {
-      "@middlewares": ["src/middlewares/*"],
-      "@configs": ["src/configs/*"],
-      "@utilities": ["src/utilities/*"],
+      "@question/*": ["src/entities/question/*"],
+      "@user/*": ["src/entities/user/*"],
+      "@option/*": ["src/entities/option/*"],
+      "@resume/*": ["src/entities/resume/*"],
+      "@test/*": ["src/entities/test/*"],
+      "@middlewares/*": ["src/middlewares/*"],
+      "@configs/*": ["src/configs/*"],
+      "@utilities/*": ["src/utilities/*"],
       "@*": ["src/*"],
     },
     "moduleResolution": "node",
