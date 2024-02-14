@@ -2,17 +2,16 @@ import { Response } from "express";
 import { hash, compare } from "bcrypt";
 import { getLogger } from "log4js";
 
-import { CustomRequest } from "@utilities/http/HttpUtils";
-import { schemasValidation } from "@utilities/http/SchemasValidator";
+import { CustomRequest } from "../../../utilities/http/HttpUtils";
+import { schemasValidation } from "../../../utilities/http/SchemasValidator";
 import {
   BadRequestError,
   NotFoundError,
   ConflictError,
-} from "@utilities/http/HttpErrors";
-import { User, UserModel } from "@user/models/UserModel";
-import SignUpSchema from "@user/schemas/SignUp";
-import { UserClaims } from "@user/models/UserModel";
-
+} from "../../../utilities/http/HttpErrors";
+import { User, UserModel } from "../../user/models/UserModel";
+import SignUpSchema from "../../user/schemas/SignUp";
+import { UserClaims } from "../../user/models/UserModel";
 import { createAccessToken } from "../services/UserService";
 
 export interface AccessResponse extends User {

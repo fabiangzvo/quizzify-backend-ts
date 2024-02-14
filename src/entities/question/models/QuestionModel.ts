@@ -1,7 +1,7 @@
 import { Schema, Types, Document } from "mongoose";
 
-import { Option } from "@option/models/OptionModel";
-import { db } from "@configs/DatabaseConfig";
+import { Option } from "../../option/models/OptionModel";
+import { db } from "../../../configs/DatabaseConfig";
 
 const schema = new Schema(
   {

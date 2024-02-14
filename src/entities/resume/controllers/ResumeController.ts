@@ -1,9 +1,8 @@
 import { Response } from "express";
 
-import { CustomRequest } from "@utilities/http/HttpUtils";
-import { Resume, ResumeModel } from "@resume/models/ResumeModel";
-import { schemasValidation } from "@utilities/http/SchemasValidator";
-
+import { CustomRequest } from "../../../utilities/http/HttpUtils";
+import { Resume, ResumeModel } from "../../resume/models/ResumeModel";
+import { schemasValidation } from "../../../utilities/http/SchemasValidator";
 import createResumeSchema from "../schemas/CreateResume";
 
 export async function postResume(

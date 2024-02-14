@@ -1,7 +1,7 @@
 import { Schema, Document, Types } from "mongoose";
 
-import { Test } from "@test/models/TestModel";
-import { db } from "@configs/DatabaseConfig";
+import { Test } from "../../test/models/TestModel";
+import { db } from "../../../configs/DatabaseConfig";
 
 const schema = new Schema(
   {

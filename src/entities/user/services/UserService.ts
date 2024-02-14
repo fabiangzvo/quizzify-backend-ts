@@ -1,6 +1,6 @@
 import { sign } from "jsonwebtoken";
 
-import { UserClaims } from "@user/models/UserModel";
+import { UserClaims } from "../../user/models/UserModel";
 
 export function createAccessToken(data: UserClaims): {
   accessToken: string;

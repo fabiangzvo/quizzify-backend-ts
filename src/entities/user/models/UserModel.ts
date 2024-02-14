@@ -1,6 +1,6 @@
 import { Schema, Document } from "mongoose";
 
-import { db } from "@configs/DatabaseConfig";
+import { db } from "../../../configs/DatabaseConfig";
 
 const schema = new Schema(
   {

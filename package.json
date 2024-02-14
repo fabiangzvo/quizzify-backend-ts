@@ -2,19 +2,19 @@
   "name": "quizzify-backend",
   "version": "1.0.0",
   "description": "backend for quizzify app",
-  "main": "./src/index.ts",
   "author": "@fabiangzvo",
   "license": "MIT",
   "type": "commonjs",
   "scripts": {
     "build": "npx tsc",
-    "start": "node dist/src/index.js",
-    "dev": "nodemon ./src/index.ts"
+    "start": "node dist/api/index.js",
+    "dev": "nodemon api/index.ts"
   },
   "devDependencies": {
     "@types/cors": "^2.8.17",
     "@types/express": "^4.17.21",
     "@types/jsonwebtoken": "^9.0.5",
+    "@types/module-alias": "^2.0.4",
     "@types/node": "^20.11.15",
     "@types/uuid": "^9.0.8",
     "nodemon": "^3.0.3",
@@ -35,15 +35,15 @@
     "uuid": "^9.0.1"
   },
   "_moduleAliases": {
-    "@user": "src/entities/user",
-    "@question": "src/entities/question",
-    "@resume": "src/entities/resume",
-    "@option": "src/entities/option",
-    "@test": "src/entities/test",
-    "@middlewares": "src/middlewares",
-    "@utilities": "src/utilities",
-    "@configs": "src/configs",
-    "@Routes": "src/Routes.ts",
-    "@": "src"
+    "@user": "./dist/src/entities/user",
+    "@question": "./dist/src/entities/question",
+    "@resume": "./dist/src/entities/resume",
+    "@option": "./dist/src/entities/option",
+    "@test": "./dist/src/entities/test",
+    "@middlewares": "./dist/src/middlewares",
+    "@utilities": "./dist/src/utilities",
+    "@configs": "./dist/src/configs",
+    "@/Routes": "./dist/src/Routes.js",
+    "@": "./dist/src"
   }
 }

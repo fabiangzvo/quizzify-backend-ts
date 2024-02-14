@@ -1,8 +1,5 @@
-import { Types } from "mongoose";
-
-import { insertManyOptions } from "@option/services/OptionService";
-import { Option } from "@option/models/OptionModel";
-
+import { insertManyOptions } from "../../option/services/OptionService";
+import { Option } from "../../option/models/OptionModel";
 import { Question, QuestionModel } from "../models/QuestionModel";
 
 import { getLogger } from "log4js";

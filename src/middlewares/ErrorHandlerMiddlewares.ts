@@ -1,7 +1,7 @@
 import { Response } from "express";
 
-import { HttpError } from "@utilities/http/HttpErrors";
-import { CustomRequest } from "@utilities/http/HttpUtils";
+import { HttpError } from "../utilities/http/HttpErrors";
+import { CustomRequest } from "../utilities/http/HttpUtils";
 
 const errMessageContainsError = (message): boolean =>
   message.search("message") > -1 && message.search("statusCode") > -1;

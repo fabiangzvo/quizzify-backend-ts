@@ -1,12 +1,11 @@
 import { Response } from "express";
 
-import { CustomRequest } from "@utilities/http/HttpUtils";
-import { Test, TestModel } from "@test/models/TestModel";
-import { schemasValidation } from "@utilities/http/SchemasValidator";
-import { insertManyQuestions } from "@question/services/QuestionService";
-
+import { CustomRequest } from "../../../utilities/http/HttpUtils";
+import { Test, TestModel } from "../../test/models/TestModel";
+import { schemasValidation } from "../../../utilities/http/SchemasValidator";
+import { insertManyQuestions } from "../../question/services/QuestionService";
+import { Question } from "../../question/models/QuestionModel";
 import createTestSchema from "../schemas/CreateTest";
-import { Question } from "@question/models/QuestionModel";
 
 export async function postTest(
   req: CustomRequest<null, Test, Test>,

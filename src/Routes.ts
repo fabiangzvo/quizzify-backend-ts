@@ -1,7 +1,7 @@
 import { Router } from "express";
 
-import TestsRoutes from "@test/TestsRoutes";
-import ResumeRoutes from "@resume/ResumeRoutes";
+import TestsRoutes from "./entities/test/TestsRoutes";
+import ResumeRoutes from "./entities/resume/ResumeRoutes";
 
 const mainRouter = Router();
 

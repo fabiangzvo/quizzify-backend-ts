@@ -1,6 +1,6 @@
 import { Router } from "express";
 
-import { BaseRequestHandler } from "@utilities/http/HttpUtils";
+import { BaseRequestHandler } from "../../utilities/http/HttpUtils";
 import { signUp, signIn } from "./controllers/UserController";
 
 const testsRoutes = Router();
